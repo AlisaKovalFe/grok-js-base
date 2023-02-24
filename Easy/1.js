@@ -5,6 +5,7 @@
 
 const toSentence = (arr) => {
     /* Тут код*/
+    return arr.join(' ')
 
 }
 
