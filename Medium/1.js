@@ -6,6 +6,9 @@
 
 const logEachLetter = (str) => {
     /* Тут код*/
+    for (let letter of str) {
+        console.log(letter);
+    }
 
 }
 

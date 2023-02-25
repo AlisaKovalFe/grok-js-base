@@ -7,8 +7,14 @@
 Пример: 'web_development' => 'webDevelopment'
 */
 
-const camelCase = () => {
+const camelCase = (str) => {
     /* Тут код*/
+    let indexMatch = str.match(/_/).index
+    let indexAfterMtach = indexMatch + 1
+
+    let strNew = str.slice(0, indexMatch) + str.substr(indexAfterMtach, 1).toUpperCase() + str.slice(indexAfterMtach + 1).toLowerCase()
+
+    return strNew
 
 }
 

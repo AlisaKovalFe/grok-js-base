@@ -11,7 +11,17 @@
 
 const sumOfIntegers = (start, end) => {
     /* Тут код*/
+    let sum = 0
 
+    if (start > end) {
+        let buf = start
+        start = end
+        end = buf
+    }
+    for (let i = start; i <= end; i++) {
+        sum += i
+    }
+    return sum
 }
 
 module.exports = sumOfIntegers

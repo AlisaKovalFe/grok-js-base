@@ -10,6 +10,13 @@
 
 const nestedArr = (arr, number) => {
     /* Тут код*/
+    let index
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].includes(number)) {
+            index = i
+        }
+    }
+    return index
 
 }
 
