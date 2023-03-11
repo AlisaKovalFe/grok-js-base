@@ -9,8 +9,10 @@
 const randomArr = () => {
     /* Тут код*/
     let arr = []
+    let min = 0
+    let max = 10
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = min; i < max; i++) {
         n = Math.round(Math.random() * 10)
         arr.push(n)
     }
